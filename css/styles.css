@@ -1,1 +1,138 @@
+/* Color Palette
+   Primary: #1F3B4D (deep blue)
+   Accent:  #F4A261 (warm orange)
+   Light:   #F7F9FC (soft off-white)
+   Dark:    #0B1A24 (near-black)
+   Muted:   #8A9BA8 (cool gray)
+   Link:    #2A9D8F (teal)
+   Error:   #E76F51 (rust red)
+*/
 
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+    background-color: #F7F9FC; /* Light */
+    color: #0B1A24; /* Dark */
+    line-height: 1.6;
+}
+
+/* Layout */
+.site-header {
+    background-color: #1F3B4D; /* Primary */
+    color: #F7F9FC; /* Light */
+    padding: 2rem 10%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+}
+
+.tagline {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #F4A261; /* Accent */
+}
+
+.content {
+    padding: 2rem 10%;
+}
+
+.about-section,
+.profile-section,
+.social-section {
+    margin-bottom: 2.5rem;
+}
+
+.about-section h2,
+.profile-section h2,
+.social-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+    color: #1F3B4D; /* Primary */
+}
+
+/* Profile section */
+.profile-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.profile-photo {
+    max-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(11, 26, 36, 0.25);
+}
+
+.profile-text {
+    max-width: 600px;
+}
+
+/* Social links */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.social-links li {
+    margin: 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #2A9D8F; /* Link */
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #F4A261; /* Accent */
+    border-color: #F4A261;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #0B1A24; /* Dark */
+    color: #F7F9FC; /* Light */
+    text-align: center;
+    padding: 1rem 10%;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .site-header,
+    .content,
+    .site-footer {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .site-header h1 {
+        font-size: 1.6rem;
+    }
+}
