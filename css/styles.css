@@ -50,17 +50,17 @@ body {
     color: #F4A261; /* Accent */
 }
 
-/* ====== GRID LAYOUT FOR PAGE (Required for assignment) ====== */
+/* ====== GRID LAYOUT ====== */
 .content {
     display: grid;
-    grid-template-columns: 250px 1fr; /* Sidebar nav | Main content */
+    grid-template-columns: 250px 1fr;
     gap: 2rem;
     padding: 2rem 10%;
 }
 
-/* ====== SIDEBAR NAVIGATION (Required for assignment) ====== */
+/* ====== SIDEBAR NAV ====== */
 .sidebar-nav {
-    background-color: #1F3B4D; /* Primary */
+    background-color: #1F3B4D;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
@@ -77,14 +77,14 @@ body {
 }
 
 .sidebar-nav a {
-    color: #F7F9FC; /* Light */
+    color: #F7F9FC;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.2s ease;
 }
 
 .sidebar-nav a:hover {
-    color: #F4A261; /* Accent */
+    color: #F4A261;
 }
 
 /* Section spacing */
@@ -99,7 +99,7 @@ body {
 .social-section h2 {
     font-size: 1.6rem;
     margin-bottom: 0.75rem;
-    color: #1F3B4D; /* Primary */
+    color: #1F3B4D;
 }
 
 /* Profile section */
@@ -136,21 +136,21 @@ body {
 
 .social-links a {
     text-decoration: none;
-    color: #2A9D8F; /* Link */
+    color: #2A9D8F;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .social-links a:hover {
-    color: #F4A261; /* Accent */
+    color: #F4A261;
     border-color: #F4A261;
 }
 
 /* Footer */
 .site-footer {
-    background-color: #0B1A24; /* Dark */
-    color: #F7F9FC; /* Light */
+    background-color: #0B1A24;
+    color: #F7F9FC;
     text-align: center;
     padding: 1rem 10%;
     font-size: 0.9rem;
@@ -160,7 +160,7 @@ body {
 /* Responsive tweaks */
 @media (max-width: 768px) {
     .content {
-        grid-template-columns: 1fr; /* Stack nav above content */
+        grid-template-columns: 1fr;
     }
 
     .sidebar-nav {
@@ -179,24 +179,59 @@ body {
     }
 }
 
+/* ========================= */
+/*        DARK THEME         */
+/* ========================= */
+
 body.dark-theme {
     background-color: #121212;
     color: #e0e0e0;
 }
 
+/* Header */
 body.dark-theme .site-header {
     background-color: #1e1e1e;
+    color: #e0e0e0;
 }
 
+body.dark-theme .tagline {
+    color: #e0e0e0;
+}
+
+/* Sidebar */
 body.dark-theme .sidebar-nav {
     background-color: #1e1e1e;
 }
 
-body.dark-theme a {
+body.dark-theme .sidebar-nav a {
+    color: #e0e0e0;
+}
+
+body.dark-theme .sidebar-nav a:hover {
     color: #80b3ff;
 }
 
-body.dark-theme .site-footer {
-    background-color: #1e1e1e;
+/* Section headers */
+body.dark-theme h2 {
+    color: #e0e0e0;
 }
 
+/* Social links */
+body.dark-theme .social-links a {
+    color: #80b3ff;
+}
+
+body.dark-theme .social-links a:hover {
+    color: #F4A261;
+}
+
+/* Footer */
+body.dark-theme .site-footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* Images */
+body.dark-theme .profile-photo {
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.15);
+}
