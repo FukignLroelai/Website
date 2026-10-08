@@ -178,3 +178,25 @@ body {
         font-size: 1.6rem;
     }
 }
+
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-theme .site-header {
+    background-color: #1e1e1e;
+}
+
+body.dark-theme .sidebar-nav {
+    background-color: #1e1e1e;
+}
+
+body.dark-theme a {
+    color: #80b3ff;
+}
+
+body.dark-theme .site-footer {
+    background-color: #1e1e1e;
+}
+
